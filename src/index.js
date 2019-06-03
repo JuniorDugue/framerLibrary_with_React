@@ -1,10 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Frame } from "framer"; //from the framer libarary
+import { Frame, useCycle } from "framer"; //from the framer libarary
 
 import "./styles.css";
 
 function App() {
+  const result = useCycle(0, 60);
+  const x = result[0]
+  const cycle = result[1]
+  console.log(result);
   return (
     <div className="App">
       <Frame
@@ -14,10 +18,11 @@ function App() {
         onTap={function handleTap() {
           //change the value to x = {0}
           console.log("tapped!");
+          cycle()
         }}
       >
         {/* have to camel case border-radius, for height/width you can use % or rem*/}
-        <Frame size={60} borderRadius={30} x={60} />
+        <Frame size={60} borderRadius={30} x={x} />
         {/*x is like x translate in css */}
       </Frame>
     </div>

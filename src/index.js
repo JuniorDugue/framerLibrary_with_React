@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Frame width={120} height={60} borderRadius={60}>
-        <Frame size={50} borderRadius={30} />
+        <Frame size={60} borderRadius={30} x={60} />
       </Frame>
     </div>
   );

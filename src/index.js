@@ -20,6 +20,7 @@ function App() {
           // console.log("tapped!");
           cycle();
         }}
+        className="pointer"
       >
         {/* have to camel case border-radius, for height/width you can use % or rem*/}
         <Frame

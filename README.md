@@ -1,2 +1,2 @@
 # framerLibrary_with_React
-Created with CodeSandbox
+A animated toggle graphic component Created with CodeSandbox

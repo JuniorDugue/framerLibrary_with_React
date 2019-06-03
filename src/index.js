@@ -22,7 +22,12 @@ function App() {
         }}
       >
         {/* have to camel case border-radius, for height/width you can use % or rem*/}
-        <Frame size={60} borderRadius={30} animate={{ x: x }} />
+        <Frame
+          size={60}
+          borderRadius={30}
+          animate={{ x: x }}
+          transition={{ duration: 0.2 }}
+        />
         {/*x is like x translate in css */}
       </Frame>
     </div>

@@ -27,7 +27,7 @@ function App() {
           size={60}
           borderRadius={30}
           animate={{ x: x }}
-          transition={{ duration: 0.2 }}
+          // transition={{ duration: 0.2 }}
         />
         {/*x is like x translate in css */}
       </Frame>
